@@ -7,16 +7,21 @@
 body{
 
     width: 100wh;
+    /* width: 1707.5px; */
     min-height: 100vh;
-    background: color #f5f5f5; ;
+    background: color #f5f5f5; 
+    overflow-x: hidden;
 }
 
 
 /* Entête de la la navigation */
 .navigation{
+    z-index: 99999999;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 59px;
-    opacity: .9;
+    opacity: .8;
     background-color:#B80B8A ;
     display: flex;
     color:white;
@@ -27,7 +32,7 @@ body{
     padding: 9px 150px;
     color: #fff;
     font-weight: 100;
-    font-family: sans-serif;
+    font-family:Poppins, sans-serif;
     line-height: 1.5rem;
 }
 
@@ -78,7 +83,8 @@ body{
 .icons .panier span{
     position: absolute;
     top: 2px;
-    right: 270px;
+    /* right: 270px; */
+    right: 15.7%;
     display: block;
     width: 20px;
     height: 20px;
@@ -88,7 +94,6 @@ body{
     align-items: center;
     justify-content: center;
     padding-left: -7px;
-    
     font-weight: normal;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -103,4 +108,452 @@ body{
 .icons .user img{
     margin-top: -2px;
     width: 25px;
+    
 }
+.menu-burger {
+    margin-top: 3px;
+    width: 10%;
+    height: 100%;
+   
+}
+.menu-burger .item-menu-burger span{
+    margin-left: 60%;
+    display: block;
+    width: 6px;
+    height: 50px;
+    background: white;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.menu-burger .item-menu-burger span::after{
+    content: " ";
+    position: absolute;
+    margin-left: 60%;
+    display: block;
+    width: 6px;
+    height: 50px;
+    background: white;
+    transform: translateX(-15px);
+    transform: rotate(180deg);
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.menu-burger .item-menu-burger span::before{
+    position: absolute;
+    content: " ";
+    margin-left: 60%;
+    display: block;
+    width: 6px;
+    height: 50px;
+    transform: translateX(8px);
+    background: white;
+    transform: rotate(180deg);
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    -o-transform: translateX(8px);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.parents{
+    background-image: url(img/bg.jpg);
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Au dessus des images */
+.stage{
+   
+    z-index: 9999999;
+    position: fixed;
+    overflow: hidden;
+    height: 59px;
+}
+.images-full{
+    width: 100%;
+    height: 925px;
+   
+}
+.images-full .img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   
+}
+
+.img-full{
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+     position: relative;
+     padding-top: 100px;
+     padding-left: 10%;
+}
+.images-full .images-full-1{
+    position: relative;
+    background-size: cover;
+}
+.images-full .images-full-2{
+    z-index: 1000;
+    background-size: cover;
+    position: relative;
+    left: -102px;
+}.images-full .images-full-3{
+    z-index: 9000;
+    background-size: cover;
+    position: relative;
+    left: -204px;
+
+
+}
+.images-full-right img{
+    width: 550px;
+ 
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translateX(105px);
+    -webkit-transform: translateX(242px);
+    -moz-transform: translateX(105px);
+    -ms-transform: translateX(105px);
+    -o-transform: translateX(105px);
+}
+
+/* Presentation */
+.presentation{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0 40px;
+}
+.presentation .text-presentation{
+    font-size: 95px;
+    position: relative;
+    font-weight: 700;
+    
+}
+
+.presentation .text-presentation .purple{
+    display: inline-block;
+    background-color: #940B71;
+    padding-left: 7px;
+    width: 350px;
+    height: 218px;
+    color: white;
+}
+.presentation .text-presentation strong{
+   font-weight: normal;
+   text-transform: uppercase;
+}
+.presentation .text-presentation .small{
+    padding-left: 50px;
+    position: relative;
+    top: -18px;
+}
+.purple-left{
+    color: rgba(112, 21, 112, 0.884);
+    display: inline-block; 
+    position: relative;
+    top: -109px;
+    right: -32px;
+    padding: 0;
+    margin: 0;
+}
+
+ .boutique{
+   margin-top: 15px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boutique a{
+    display: block;
+     width: 350px;
+    height: 60px;
+    background: #940B71;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.text-small{
+     color: #F7B401;
+     font-size: 24px;
+     top: -140px;
+     left: 382px;
+     position: relative;
+}
+.boutique a{
+    color: white;
+    text-decoration: none;
+}
+/* Bande violet */
+.bande{
+    background-color: #940B71;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: -30px;
+}
+
+/* Deuxième partie */
+
+/* Paragraphes */
+/* .container-paragraphe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */
+.paragraphe{
+    margin-top: 50px;
+    padding-left: 130px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns:24% 65% ;
+    grid-template-rows: 500px;
+    font-size: 18px;
+    word-break: break-all;
+    grid-gap: 20px;
+    
+}
+.paragraphe-left{
+  margin-left: 70px;
+  margin-right: 60px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.paragraphe-left .paragraphe-left-head, .paragraphe-right .paragraphe-right-head {
+    padding: 25px 0;
+}
+.paragraphe-right h2{
+    font-size: 28px;
+}
+.paragraphe-right-content{
+  width: 100%;
+  height: 76%;
+  display: grid;
+  grid-template-columns: 540px 400px;
+  grid-template-rows: 150px 150px;
+  padding-top: 25px;
+  grid-gap: 20px;
+}
+.paragraphe-right-content p{
+   padding: 15px 0;
+}
+
+.paragraphe-right-content h2{
+    color: #F7B401;
+    /* text-align: justify; */
+}
+.paragraphe-left-text{
+    padding-top: 25px;
+}
+.paragraphe-right-head{
+    padding-bottom: 25px;
+}
+
+.paragraphe-right-head,.paragraphe-left-head{
+    color: #940B71;
+    border-bottom: 3px solid #B80B8A;
+}
+
+/* Bande des images alignées */
+
+.container-bande{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,560px);
+    margin-bottom: 25px;
+}
+.tof{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tof:nth-child(3){
+    
+    background-image: url(img/beaute.jpg);
+    background-size: cover;
+}
+.tof:nth-child(2){
+    
+    background-image: url(img/belle3.jpg);
+    background-size: cover;
+}
+.tof:nth-child(1){
+    
+    background-image: url(img/mother.jpg);
+    background-size: cover;
+}
+.tof:nth-child(4){
+    
+    background-image: url(img/raza.jpg);
+    background-size: cover;
+}
+
+.tof .describe{
+    width: 280px;
+    height: 60px;
+    background-color: #940B71;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Debut sur les achats en ligne */
+.bought-inline{
+    padding-left:  150px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+.describe-bought-inline{
+    padding-top: 35px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.title-bought-inline{
+    color: #940B71;
+    border-bottom: 3px solid #B80B8A;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    line-height: 20px;
+    font-size: 35px;
+}
+
+ .para{
+   margin: 20px 0;
+   font-size: 20px;
+    /* line-height: 40px; */
+}
+/* Bande d'image */
+.bande-image{
+    width: 100%;
+    height: 370px;
+    background-image:  url(img/imageDumilien.jpg);
+    background-position:  4px 740px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* A effacer */
+   
+    display: flex;
+    align-items: center;
+}
+.text-bande-image{
+    width: 280px;
+    height: 150px;
+    background-color: #cf2ea4;
+    opacity: .7;
+    font-size: 20px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+    right: -70%;
+    color: #f5f5f5;
+}
+
+/* Timeline */
+.barre::before{
+   content: ' ';
+   width: 2px;
+   height: 100%;
+   background-color: #F7B401;
+   position: absolute;
+   right: 850px;
+   display: flex;
+   align-items: center;
+   
+   
+}
+
+.timeline{
+    width: 100%;
+    height: 1500px;
+    background-color: red;
+    margin-bottom: 50px;
+    /* text-align: center; */
+    padding-left: 850px; 
+    position: relative; 
+    overflow-y: hidden;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #756ABB;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   
+    z-index: 9000;
+
+}
+
+.circle, .timeline-para{
+    float: left;
+}
+/* .mamaAfrica{
+    position: absolute;
+    left: -505px;
+} */
+.timeline-para{
+   height: 250px;
+   width: 400px;
+   border: 1px solid;
+   border-radius:0 0 20px 20px ;
+   -webkit-border-radius:0 0 20px 20px ;
+   -moz-border-radius:0 0 20px 20px ;
+   -ms-border-radius:0 0 20px 20px ;
+   -o-border-radius:0 0 20px 20px ;
+
+}
+
+.header-timeline{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+}
+
