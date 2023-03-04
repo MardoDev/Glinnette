@@ -20,7 +20,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 59px;
+    height: 44px;
     opacity: .8;
     background-color:#B80B8A ;
     display: flex;
@@ -28,34 +28,39 @@ body{
 }
 
 .logo{
-    width: 45%;
-    padding: 9px 150px;
+    width: 40%;
+    padding: 4px 150px 0px 150px ;
     color: #fff;
     font-weight: 100;
     font-family:Poppins, sans-serif;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
+    
 }
 
 .logo .logo-1{
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .logo .slogan{
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
+    height: 22px;
+    
 }
 .items{
-    padding-top: 19px;
+    /* padding-top: 14px; */
     width: 35%;
     color:white;
+    display: flex;
+    align-items: center;
 }
 .items ul li{
     display: inline;
     margin: 0 15px;
     list-style: none;
-    font-size: 18px;
+    font-size: 14px;
   
 
 }
@@ -63,31 +68,36 @@ body{
     text-decoration: none;
     color:white;
     padding: 10px 0;
+    font-size: 14px;
 }
 .icons{
-    width: 10%;
-    padding-top: 10px;
+    width: 15%;
+    /* padding-top: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons p img{
 
     margin: auto 20px;
     float: left;
-    width: 30px;
+    width: 27px;
     display: inline;
 
 }
 .icons .panier{
-    margin-top: 7px;
+    /* margin-top: 7px; */
+    position: relative;
 }
 .icons .panier span{
     position: absolute;
-    top: 2px;
+    top: -8px;
     /* right: 270px; */
-    right: 15.7%;
+    right: 2.4%;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: #B80B8A;
     background-color: #fff;
     display: flex;
@@ -95,6 +105,7 @@ body{
     justify-content: center;
     padding-left: -7px;
     font-weight: normal;
+    font-size: 11px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -107,20 +118,24 @@ body{
 }
 .icons .user img{
     margin-top: -2px;
-    width: 25px;
+    width: 22px;
     
 }
 .menu-burger {
-    margin-top: 3px;
+    /* margin-top: 0px; */
     width: 10%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 auto;
+    padding-left: 45px;
    
 }
 .menu-burger .item-menu-burger span{
     margin-left: 60%;
     display: block;
-    width: 6px;
-    height: 50px;
+    width: 5px;
+    height: 40px;
     background: white;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -139,8 +154,8 @@ body{
     position: absolute;
     margin-left: 60%;
     display: block;
-    width: 6px;
-    height: 50px;
+    width: 5px;
+    height: 40px;
     background: white;
     transform: translateX(-15px);
     transform: rotate(180deg);
@@ -159,8 +174,8 @@ body{
     content: " ";
     margin-left: 60%;
     display: block;
-    width: 6px;
-    height: 50px;
+    width: 5px;
+    height: 40px;
     transform: translateX(8px);
     background: white;
     transform: rotate(180deg);
@@ -492,22 +507,18 @@ body{
 /* Timeline */
 .barre::before{
    content: ' ';
-   width: 2px;
+   width: 4px;
    height: 100%;
    background-color: #F7B401;
    position: absolute;
-   right: 850px;
+   right: 836px;
    display: flex;
-   align-items: center;
-   
-   
+   align-items: center; 
 }
 
 .timeline{
     width: 100%;
     height: 1500px;
-    background-color: red;
-    margin-bottom: 50px;
     /* text-align: center; */
     padding-left: 850px; 
     position: relative; 
@@ -517,12 +528,11 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #756ABB;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-   
+     border: 1px solid #F7B401;
     z-index: 9000;
 
 }
@@ -535,25 +545,28 @@ body{
     left: -505px;
 } */
 .timeline-para{
-   height: 250px;
-   width: 400px;
-   border: 1px solid;
-   border-radius:0 0 20px 20px ;
-   -webkit-border-radius:0 0 20px 20px ;
-   -moz-border-radius:0 0 20px 20px ;
-   -ms-border-radius:0 0 20px 20px ;
-   -o-border-radius:0 0 20px 20px ;
-
+    height: 250px;
+    width: 400px;
+    border: 1px solid;
+    border-radius:0 0 20px 20px ;
+    -webkit-border-radius:0 0 20px 20px ;
+    -moz-border-radius:0 0 20px 20px ;
+    -ms-border-radius:0 0 20px 20px ;
+    -o-border-radius:0 0 20px 20px ;
+    
 }
+
 
 .header-timeline{
     width: 100%;
     height: 50px;
     padding-left: 20px;
-    background-color: #fff;
+   
     font-size: 22px;
     font-weight: 200;
     display: flex;
     align-items: center;
 }
+
+
 
