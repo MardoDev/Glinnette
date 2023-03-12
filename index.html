@@ -8,9 +8,9 @@
     <title>Projet ginette-shop</title>
 </head>
 <body>
-    
+    <script src="script.js"></script>
     <!-- bar de navigation de ma page -->
-        <nav class="navigation">
+        <nav class="navigation" id="menu">
               <div class="logo">
                   <h4 class="logo-1">Glinette shop</h4>
                   <p class="slogan">Le meilleurs de vous simplement</p>
@@ -41,7 +41,7 @@
         </nav>
     <!-- Fin de la bar de navigation -->
     <!-- Les images en grand et ronds -->
-    <div class="parents">
+    <div class="parents" id="monte">
     <!-- <div class="stage"></div> -->
        <div class="images-full">
          <div class="img-full">
@@ -57,14 +57,16 @@
          </div>
                <div class="presentation">
                         <p class="text-presentation">
-                          <span class="purple-left">Glinet </span>  <span class="purple"> te  <br><span class="small"><strong>s</strong>hop</span> 
-                         </span>
+                          <span class="purple-left">Glinet </span>
+                            <span class="purple"><span class="te">te </span>  <br>
+                                <span class="small"><strong>s</strong>hop</span> 
+                            </span>
                          </p>
-                         <p class="text-small">
-                            <span class="rose"><small>  Nous là pour vous </small><span class="break"></span>
-                         </p>
-                       
-               </div>
+                         
+                        </div>
+                        <p class="text-small">
+                           <span class="rose"><small>  Nous là pour vous </small><span class="break"></span>
+                        </p>
              
                <div class="boutique">
                      <a href="#">Accéder à la boutique</a>
@@ -72,8 +74,11 @@
                <div class="images-full-right">
                    <img src="img/belle.png" alt="">
                </div>
+               <a href="#menu" class="link"></a>
        </div>
     </div>
+    <!-- Revenir à l'accueil -->
+     <a href="#monte" class="lienMonter"> <span class="monte1"></span> <span class="monte2"></span></a>
     <!-- Fin des images -->
     <!-- Bande violet -->
     <div class="bande"></div>
@@ -151,7 +156,7 @@
              </p>
           </div>
           <div class="tof">
-            <p class="describe">
+            <p class="describe " id="p8">
                 Mode Femme indépendante
             </p>
           </div>
@@ -198,69 +203,81 @@
     <!-- Timeline -->
     <div class="timeline">
         <div class="timeline-item1 barre">
-            <div class="circle"></div>
+            <div class="circle c1"></div>
             <div class="timeline-para p1">
                 <div class="header-timeline ht1">
                     MODE MAMAN AFRIKA
                 </div>
                 <div class="body-timeline it1">
-                    Glinette shop est une marque engagée 
-                    qui lutte contre la disparition des artisans africains
-                    et plus particulièrement de la 
-                    filière textile. En rendant accessible le 
-                    savoir-faire unique des artisans locaux,
-                    la marque participe ainsi à un artisanat 
-                    durable en Afrique.
+                     Glinette shop est une marque engagée <br> 
+                    qui lutte contre la disparition des artisans africains<br> 
+                    et plus particulièrement de la <br> 
+                    filière textile. En rendant accessible le <br> 
+                    savoir-faire unique des artisans locaux,<br>
+                    la marque participe ainsi à un artisanat <br>
+                    durable en Afrique.                  
                 </div>
             </div>
+            <span class="small-image1 si">
+                  <img src="small-images/maman.png" alt="">
+            </span>
         </div>
+            <span class="circle-color1 rond"></span>
         <div class="timeline-item2  barre">
-            <div class="circle c1"></div>
-            <div class="timeline-para it1">
-                <div class="header-timeline ">
+            <div class="circle c2"></div>
+            <div class="timeline-para p2">
+                <div class="header-timeline ht2">
                     DESIGN & RELOOKING
                 </div>
                 <div class="body-timeline">
-                    Glinette shop est une marque engagée 
-                    qui lutte contre la disparition des artisans africains
-                    et plus particulièrement de la 
-                    filière textile. En rendant accessible le 
-                    savoir-faire unique des artisans locaux,
-                    la marque participe ainsi à un artisanat 
-                    durable en Afrique.
+                    Glinette shop est une marque engagée <br> 
+                    qui lutte contre la disparition des artisans africains<br> 
+                    et plus particulièrement de la <br> 
+                    filière textile. En rendant accessible le <br> 
+                    savoir-faire unique des artisans locaux,<br>
+                    la marque participe ainsi à un artisanat <br>
+                    durable en Afrique.                 
                 </div>
             </div>
+            <span class="small-image2 si">
+                <img src="small-images/Femme.png" alt="">
+          </span>
         </div>
+        <span class="circle-color2 rond"></span>
         <div class="timeline-item3 barre">
-            <div class="circle"></div>
-            <div class="timeline-para">
-                <div class="header-timeline">
+            <div class="circle c3"></div>
+            <div class="timeline-para p3">
+                <div class="header-timeline ht3">
                     MODE HOMME FLASHY
                 </div>
                 <div class="body-timeline">
-                    Afrhika store est une marque engagée 
-                    qui lutte contre la disparition des artisans
-                    africains et plus particulièrement de la 
-                    filière textile. En rendant accessible le 
-                    savoir-faire unique des artisans locaux,
-                    la marque participe ainsi à un artisanat 
+                     Glinette shop est une marque engagée <br> 
+                    qui lutte contre la disparition des artisans africains<br> 
+                    et plus particulièrement de la <br> 
+                    filière textile. En rendant accessible le <br> 
+                    savoir-faire unique des artisans locaux,<br>
+                    la marque participe ainsi à un artisanat <br>
                     durable en Afrique.
+                    <span class="circle-color3 rond"></span>
                 </div>
             </div>
+            <span class="small-image3 si">
+                <img src="small-images/man.png" alt="">
+          </span>
         </div>
     </div>
     <!-- Fin de la timeline -->
     <footer class="foot">
           <div class="bande-footer1">
                <div class="bande-footer1-item">
-                    <h1 class="bande-footer1-item-header">
+                    <h3 class="bande-footer1-item-header">
                         Service Clients
-                    </h1>
+                    </h3>
                     <p class="bande-footer1-item-para">
-                        Mon Compte
-                        Suivre vos Commandes
-                        Créations sur-mesure
-                        Promotions
+                        <a href="#"> Mon Compte</a>
+                        <a href="#">Suivre vos Commandes </a>
+                        <a href="#">Créations sur-mesure</a>
+                        <a href="#">Promotions</a>  
                     </p>
                </div>
                <div class="bande-footer1-item">
@@ -268,10 +285,10 @@
                     Mentions Légales
                 </h3>
                 <p class="bande-footer1-item-para">
-                    Conditions générales d’utilisation
-                    Conditions de Vente
-                    Droit de renonciation
-                    Politique de confidentialité
+                    <a href="#">Conditions générales d’utilisation</a>
+                    <a href="#">Conditions de Vente</a>
+                    <a href="#">Droit de renonciation</a>
+                    <a href="#">Politique de confidentialité</a>   
                 </p>
 
                </div>
@@ -280,9 +297,9 @@
                     Nous Contacter
                 </h3>
                 <p class="bande-footer1-item-para">
-                    Livraison Internationale
-                    afrhika.store@gmail.com
-                    +33 (0)7.69.18.18.96                    
+                    <a href="#">Livraison Internationale</a>
+                    <a href="#">afrhika.store@gmail.com</a>
+                    <a href="#">+33 (0)7.69.18.18.96 </a>                    
                 </p>   
                </div>
           </div>
